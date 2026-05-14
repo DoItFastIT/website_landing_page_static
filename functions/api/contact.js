@@ -108,7 +108,7 @@ Country   : ${request.headers.get('CF-IPCountry') || 'Unknown'}
                 },
                 body: JSON.stringify({
                     sender: { name: 'Do It Fast IT Form', email: 'contact-form@doitfastit.com' },
-                    to: [{ email: 'support@doitfastit.com', name: 'Do It Fast IT Support' }],
+                    to: [{ email: 'masshuvo.bd@gmail.com', name: 'Do It Fast IT Support' }],
                     replyTo: { email: safeEmail, name: safeName },
                     subject: `[Contact Form] ${subjectLabel} — ${safeName}`,
                     textContent: emailText,
