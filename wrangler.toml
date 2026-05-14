@@ -12,21 +12,14 @@ binding = "ASSETS"
 [observability]
 enabled = true
 
-# ── Email Binding ──────────────────────────────────────────────
-# 1. Go to: Cloudflare Dashboard → Workers & Pages → doitfastit → Settings → Bindings
-# 2. Add Binding: Type = "Send Email", Variable name = SEB
-# 3. Destination: support@doitfastit.com (must have Email Routing enabled)
-# 4. Sender: contact-form@doitfastit.com (must be a verified address)
-[[send_email]]
-name = "SEB"
-destination_address = "support@doitfastit.com"
-
 # ── Environment Variables ──────────────────────────────────────
-# ── IMPORTANT: Add TURNSTILE_SECRET via Cloudflare Dashboard only ─────────────
+# ── IMPORTANT: Add Secrets via Cloudflare Dashboard only ───────────────────
 # Go to: Pages → doitfastit → Settings → Environment Variables → Add variable
-# Variable name : TURNSTILE_SECRET
-# Value         : 0x4AAAAAADPNUfUwrSvXuNtow_L3icVziXw   ← your secret key
-# NEVER commit this value to GitHub
+# 
+# 1. BREVO_API_KEY  : [Your Brevo API Key]
+# 2. TURNSTILE_SECRET : [Your Turnstile Secret Key]
+# 
+# NEVER commit these values to GitHub
 
 [vars]
 ENVIRONMENT = "production"
