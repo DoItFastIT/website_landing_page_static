@@ -97,17 +97,31 @@ IP Address: ${request.headers.get('CF-Connecting-IP') || 'Unknown'}
 Country   : ${request.headers.get('CF-IPCountry') || 'Unknown'}
         `.trim();
 
-        // ── 5. Send Email via Cloudflare Email Binding ───────
-        if (env.SEB) {
-            await env.SEB.send({
-                to:      'support@doitfastit.com',
-                from:    'contact-form@doitfastit.com',
-                subject: `[Contact Form] ${subjectLabel} — ${safeName}`,
-                text:    emailText,
+        // ── 5. Send Email via Brevo API ──────────────────────────────
+        if (env.BREVO_API_KEY) {
+            const brevoRes = await fetch('https://api.brevo.com/v3/smtp/email', {
+                method: 'POST',
+                headers: {
+                    'accept': 'application/json',
+                    'api-key': env.BREVO_API_KEY,
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify({
+                    sender: { name: 'Do It Fast IT Form', email: 'contact-form@doitfastit.com' },
+                    to: [{ email: 'support@doitfastit.com', name: 'Do It Fast IT Support' }],
+                    replyTo: { email: safeEmail, name: safeName },
+                    subject: `[Contact Form] ${subjectLabel} — ${safeName}`,
+                    textContent: emailText,
+                })
             });
+
+            if (!brevoRes.ok) {
+                const errorData = await brevoRes.json();
+                console.error('[contact] Brevo API error:', errorData);
+                throw new Error('Failed to send email via Brevo');
+            }
         } else {
-            // Log for debugging when binding not yet configured
-            console.warn('[contact] Email binding (SEB) not configured. Form data logged.');
+            console.warn('[contact] BREVO_API_KEY not configured. Form data logged.');
             console.log(emailText);
         }
 
