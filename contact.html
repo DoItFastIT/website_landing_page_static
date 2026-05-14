@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Do It Fast IT</title>
+<meta name="description" content="Get in touch with the Do It Fast IT team for support, custom pricing, or general inquiries.">
+<meta name="theme-color" content="#6366F1">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png?v=2">
+<link rel="shortcut icon" href="assets/img/favicon.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon.png?v=2">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Cloudflare Turnstile -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<link rel="stylesheet" href="assets/css/main.css">
+<script>
+tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#6366F1',secondary:'#10B981',accent:'#0EA5E9',bg:'var(--bg)',text:'var(--text)','card-bg':'var(--card-bg)',border:'var(--border)'},fontFamily:{sans:['Inter','sans-serif']}}}}
+</script>
+</head>
+<body class="bg-bg text-text min-h-screen flex flex-col">
+
+<!-- NAV -->
+<nav class="fixed w-full top-0 z-50 glass transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <a href="index.html" class="logo-link flex items-center gap-3">
+        <div class="logo-box"><img src="assets/img/doitfastit_logo.png" alt="Do It Fast IT Logo" class="h-full w-auto object-contain"></div>
+        <span class="brand-text">Do It Fast IT</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <div class="h-5 w-px bg-border mx-1"></div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i id="theme-icon" class="fa-solid fa-moon"></i></button>
+        <a href="contact.html" class="btn-primary">Get Started</a>
+      </div>
+      <div class="flex items-center gap-3 md:hidden">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i id="theme-icon" class="fa-solid fa-moon"></i></button>
+        <button id="mobile-menu-btn" class="p-2" style="color:var(--text-muted)"><i class="fa-solid fa-bars-staggered text-xl"></i></button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-b border-border p-4 absolute w-full shadow-xl" style="background:var(--card-bg)">
+    <div class="flex flex-col gap-2">
+      <a href="index.html" class="px-4 py-3 rounded-xl hover:bg-primary/10 font-medium">Home</a>
+      <a href="about.html" class="px-4 py-3 rounded-xl hover:bg-primary/10 font-medium">About</a>
+      <a href="faq.html" class="px-4 py-3 rounded-xl hover:bg-primary/10 font-medium">FAQ</a>
+      <a href="contact.html" class="px-4 py-3 rounded-xl font-semibold" style="background:rgba(99,102,241,0.1);color:var(--primary)">Contact</a>
+      <div class="h-px bg-border my-1"></div>
+      <a href="contact.html" class="btn-primary text-center mt-1">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<main class="flex-grow pt-32 pb-24">
+  <section class="max-w-7xl mx-auto px-4">
+    <!-- Header -->
+    <div class="text-center mb-16 reveal">
+      <div class="section-label mb-4"><span class="section-dot"></span>Get In Touch</div>
+      <h1 class="text-4xl md:text-6xl font-black mb-5 tracking-tight">We'd love to <span class="gradient-text">hear from you</span></h1>
+      <p class="max-w-xl mx-auto text-base leading-relaxed" style="color:var(--text-muted)">Have a question about our platform or need a custom quote? Our team typically responds within 24 hours.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <!-- Info Cards -->
+      <div class="lg:col-span-1 space-y-5">
+        <div class="premium-card reveal">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-lg" style="background:rgba(99,102,241,0.12);color:var(--primary)"><i class="fa-solid fa-envelope"></i></div>
+          <h3 class="font-bold text-lg mb-1">Email Us</h3>
+          <p class="text-sm mb-3" style="color:var(--text-muted)">Support team responds within 24 hours.</p>
+          <a href="mailto:support@doitfastit.com" class="text-sm font-bold hover:underline" style="color:var(--primary)">support@doitfastit.com</a>
+        </div>
+        <div class="premium-card reveal reveal-delay-1">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-lg" style="background:rgba(16,185,129,0.12);color:var(--secondary)"><i class="fa-solid fa-phone"></i></div>
+          <h3 class="font-bold text-lg mb-1">Call Us</h3>
+          <p class="text-sm mb-3" style="color:var(--text-muted)">Sun–Thu, 10am–6pm (BST).</p>
+          <a href="tel:+8801875489971" class="text-sm font-bold hover:underline" style="color:var(--secondary)">+880 1875-489971</a>
+        </div>
+        <div class="premium-card reveal reveal-delay-2">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-lg" style="background:rgba(14,165,233,0.12);color:var(--accent)"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="font-bold text-lg mb-1">Our Office</h3>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">66 Mogar Goli, Arambag, Motijheel<br>Dhaka – 1000, Bangladesh</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="lg:col-span-2 reveal">
+        <div class="premium-card !p-8 md:!p-10" style="padding:2.5rem">
+          <h2 class="text-2xl font-bold mb-7">Send us a message</h2>
+          <form id="contact-form" class="space-y-5" novalidate>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <label for="name" class="form-label">Full Name <span style="color:#EF4444">*</span></label>
+                <input type="text" id="name" name="name" required placeholder="John Doe" class="form-input">
+              </div>
+              <div>
+                <label for="email" class="form-label">Email Address <span style="color:#EF4444">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com" class="form-input">
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+880 1XXX-XXXXXX" class="form-input">
+              </div>
+              <div>
+                <label for="subject" class="form-label">Subject <span style="color:#EF4444">*</span></label>
+                <select id="subject" name="subject" required class="form-input">
+                  <option value="" disabled selected>Select a topic</option>
+                  <option value="custom-quote">Custom Pricing Quote</option>
+                  <option value="support">Technical Support</option>
+                  <option value="partnership">Partnership Inquiry</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="message" class="form-label">Message <span style="color:#EF4444">*</span></label>
+              <textarea id="message" name="message" required rows="5" placeholder="Tell us about your needs and how we can help..." class="form-input" style="resize:none"></textarea>
+            </div>
+
+            <!-- Cloudflare Turnstile — Real Site Key -->
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAADPNUQkDQmBvGroU" data-theme="auto"></div>
+
+            <button type="submit" class="btn-primary w-full py-4 text-base" style="border-radius:var(--r-lg)">
+              Send Message <i class="fa-solid fa-paper-plane ml-2 text-sm"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-border pt-16 pb-10" style="background:var(--card-bg)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+      <div>
+        <a href="index.html" class="logo-link flex items-center gap-3 mb-4">
+          <div class="logo-box"><img src="assets/img/doitfastit_logo.png" alt="Do It Fast IT Logo" class="h-full w-auto object-contain"></div>
+          <span class="brand-text">Do It Fast IT</span>
+        </a>
+        <p class="text-sm leading-relaxed mb-5" style="color:var(--text-muted)">Building authentic followings through unified social management tools.</p>
+        <div class="flex flex-wrap gap-2">
+          <a href="https://www.facebook.com/DoItFastIT" target="_blank" rel="noopener" class="social-link facebook w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/doitfastit" target="_blank" rel="noopener" class="social-link instagram w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/doitfastit" target="_blank" rel="noopener" class="social-link x-twitter w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+          <a href="https://www.linkedin.com/company/doitfastit" target="_blank" rel="noopener" class="social-link linkedin w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@doitfastit" target="_blank" rel="noopener" class="social-link youtube w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@doitfastit" target="_blank" rel="noopener" class="social-link tiktok w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.threads.net/@doitfastit" target="_blank" rel="noopener" class="social-link threads w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-threads"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-xs uppercase tracking-widest" style="color:var(--text-faint)">Company</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="about.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">About Us</a></li>
+          <li><a href="contact.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Contact</a></li>
+          <li><a href="faq.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-xs uppercase tracking-widest" style="color:var(--text-faint)">Legal</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="privacy-policy.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Terms of Service</a></li>
+          <li><a href="acceptable-use.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Acceptable Use</a></li>
+          <li><a href="cookie-policy.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-xs uppercase tracking-widest" style="color:var(--text-faint)">Support</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="security.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Security</a></li>
+          <li><a href="refund-policy.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Refund Policy</a></li>
+          <li><a href="contact.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Help Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-border pt-7 flex flex-col md:flex-row justify-between items-center gap-3 text-xs" style="color:var(--text-faint)">
+      <p>&copy; 2026 Do It Fast IT. All rights reserved.</p>
+      <p>Designed with <i class="fa-solid fa-heart text-red-400 mx-1"></i> by MAS Hunter Team</p>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie consent">
+  <div class="cookie-icon">🍪</div>
+  <div class="cookie-text">
+    <strong style="color:var(--text);display:block;margin-bottom:.25rem">We use cookies</strong>
+    We use cookies to improve your experience. <a href="cookie-policy.html">Learn more</a>
+  </div>
+  <div class="cookie-actions">
+    <button id="cookie-reject" class="cookie-btn-reject">Decline</button>
+    <button id="cookie-accept" class="cookie-btn-accept">Accept All</button>
+  </div>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

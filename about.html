@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Do It Fast IT</title>
+<meta name="description" content="Learn more about Do It Fast IT and our mission to simplify social media management for businesses and creators worldwide.">
+<meta name="theme-color" content="#6366F1">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png?v=2">
+<link rel="shortcut icon" href="assets/img/favicon.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon.png?v=2">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#6366F1',secondary:'#10B981',accent:'#0EA5E9',bg:'var(--bg)',text:'var(--text)','card-bg':'var(--card-bg)',border:'var(--border)'},fontFamily:{sans:['Inter','sans-serif']}}}}</script>
+</head>
+<body class="bg-bg text-text min-h-screen flex flex-col selection:bg-primary/30">
+    
+<nav class="fixed w-full top-0 z-50 glass transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <a href="index.html" class="logo-link flex items-center gap-3">
+        <div class="logo-box"><img src="assets/img/doitfastit_logo.png" alt="Do It Fast IT Logo" class="h-full w-auto object-contain"></div>
+        <span class="brand-text">Do It Fast IT</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="h-5 w-px bg-border mx-1"></div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i id="theme-icon" class="fa-solid fa-moon"></i></button>
+        <a href="contact.html" class="btn-primary">Get Started</a>
+      </div>
+      <div class="flex items-center gap-3 md:hidden">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i id="theme-icon" class="fa-solid fa-moon"></i></button>
+        <button id="mobile-menu-btn" class="p-2" style="color:var(--text-muted)"><i class="fa-solid fa-bars-staggered text-xl"></i></button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-b border-border p-4 absolute w-full shadow-xl" style="background:var(--card-bg)">
+    <div class="flex flex-col gap-2">
+      <a href="index.html" class="px-4 py-3 rounded-xl hover:bg-primary/10 font-medium">Home</a>
+      <a href="about.html" class="px-4 py-3 rounded-xl font-semibold" style="background:rgba(99,102,241,0.1);color:var(--primary)">About</a>
+      <a href="faq.html" class="px-4 py-3 rounded-xl hover:bg-primary/10 font-medium">FAQ</a>
+      <a href="contact.html" class="px-4 py-3 rounded-xl hover:bg-primary/10 font-medium">Contact</a>
+      <div class="h-px bg-border my-1"></div>
+      <a href="contact.html" class="btn-primary text-center mt-1">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<main class="flex-grow pt-32 pb-24">
+        <!-- Hero Section -->
+        <section class="max-w-7xl mx-auto px-4 mb-24 text-center">
+            <h1 class="text-4xl md:text-6xl font-black mb-8 tracking-tight animate-fade-in">
+                Empowering the Next Generation of <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Digital Storytellers.</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg md:text-xl text-text/60 leading-relaxed animate-fade-in">
+                At Do It Fast IT, we don't just build tools; we build the bridge between your creativity and your audience. Our mission is to simplify social media management so you can focus on what matters most — creating.
+            </p>
+        </section>
+
+        <!-- Our Story -->
+        <section class="max-w-5xl mx-auto px-4 mb-32">
+            <div class="premium-card grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+                    <p class="text-text/70 leading-relaxed mb-4">
+                        Founded in 2025 by the <strong>MAS Hunter Team</strong>, Do It Fast IT was born out of a simple observation: managing social media is becoming too complex. Between scheduling, engaging, and analyzing data across dozens of platforms, creators were losing their most valuable asset — time.
+                    </p>
+                    <p class="text-text/70 leading-relaxed">
+                        We set out to build a unified command center that feels as fast as it is powerful. A place where data is clear, scheduling is seamless, and engagement is effortless.
+                    </p>
+                </div>
+                <div class="bg-primary/10 rounded-3xl h-64 md:h-full flex items-center justify-center text-primary">
+                    <i class="fa-solid fa-users-gear text-8xl opacity-20"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values -->
+        <section class="max-w-7xl mx-auto px-4 mb-32">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our Core Values</h2>
+                <p class="text-text/60">The principles that drive every line of code we write.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-8">
+                    <div class="w-16 h-16 bg-secondary/10 text-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Speed Above All</h3>
+                    <p class="text-text/60">Our tools are built for performance. No bloat, no lag — just pure, lightning-fast productivity.</p>
+                </div>
+                <div class="text-center p-8">
+                    <div class="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Trust & Security</h3>
+                    <p class="text-text/60">We handle your social presence with enterprise-grade security and a commitment to privacy.</p>
+                </div>
+                <div class="text-center p-8">
+                    <div class="w-16 h-16 bg-accent/10 text-accent rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Simplicity by Design</h3>
+                    <p class="text-text/60">Complexity is the enemy of creativity. We design intuitive interfaces that stay out of your way.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team / Bangladesh -->
+        <section class="max-w-7xl mx-auto px-4">
+            <div class="bg-card-bg border border-border rounded-[3rem] p-12 md:p-20 text-center">
+                <h2 class="text-3xl font-bold mb-8">Proudly Based in Bangladesh 🇧🇩</h2>
+                <p class="max-w-3xl mx-auto text-text/60 leading-relaxed mb-12">
+                    Operating from the heart of Dhaka, the <strong>MAS Hunter Team</strong> is a collective of passionate software engineers and designers dedicated to building world-class SaaS products. We are part of the growing global tech ecosystem, serving clients from all over the world.
+                </p>
+                <div class="flex justify-center gap-4 text-text/40 text-sm font-bold uppercase tracking-widest">
+                    <span>66 Mogar Goli</span>
+                    <span>•</span>
+                    <span>Dhaka - 1000</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="border-t border-border pt-16 pb-10 mt-auto" style="background:var(--card-bg)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+      <div>
+        <a href="index.html" class="logo-link flex items-center gap-3 mb-4"><div class="logo-box"><img src="assets/img/doitfastit_logo.png" alt="Do It Fast IT" class="h-full w-auto object-contain"></div><span class="brand-text">Do It Fast IT</span></a>
+        <p class="text-sm leading-relaxed mb-5" style="color:var(--text-muted)">Building authentic followings through unified social management tools.</p>
+        <div class="flex flex-wrap gap-2">
+          <a href="https://www.facebook.com/DoItFastIT" target="_blank" rel="noopener" class="social-link facebook w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/doitfastit" target="_blank" rel="noopener" class="social-link instagram w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/doitfastit" target="_blank" rel="noopener" class="social-link x-twitter w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+          <a href="https://www.linkedin.com/company/doitfastit" target="_blank" rel="noopener" class="social-link linkedin w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@doitfastit" target="_blank" rel="noopener" class="social-link youtube w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@doitfastit" target="_blank" rel="noopener" class="social-link tiktok w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.threads.net/@doitfastit" target="_blank" rel="noopener" class="social-link threads w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-threads"></i></a>
+        </div>
+      </div>
+      <div><h4 class="font-bold mb-4 text-xs uppercase tracking-widest" style="color:var(--text-faint)">Company</h4><ul class="space-y-3 text-sm"><li><a href="about.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">About Us</a></li><li><a href="contact.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Contact</a></li><li><a href="faq.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">FAQ</a></li></ul></div>
+      <div><h4 class="font-bold mb-4 text-xs uppercase tracking-widest" style="color:var(--text-faint)">Legal</h4><ul class="space-y-3 text-sm"><li><a href="privacy-policy.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Privacy Policy</a></li><li><a href="terms-of-service.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Terms of Service</a></li><li><a href="cookie-policy.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Cookie Policy</a></li></ul></div>
+      <div><h4 class="font-bold mb-4 text-xs uppercase tracking-widest" style="color:var(--text-faint)">Support</h4><ul class="space-y-3 text-sm"><li><a href="security.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Security</a></li><li><a href="refund-policy.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Refund Policy</a></li><li><a href="contact.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Help Center</a></li></ul></div>
+    </div>
+    <div class="border-t border-border pt-7 flex flex-col md:flex-row justify-between items-center gap-3 text-xs" style="color:var(--text-faint)">
+      <p>&copy; 2026 Do It Fast IT. All rights reserved.</p>
+      <p>Designed with <i class="fa-solid fa-heart text-red-400 mx-1"></i> by MAS Hunter Team</p>
+    </div>
+  </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie consent">
+  <div class="cookie-icon">🍪</div>
+  <div class="cookie-text"><strong style="color:var(--text);display:block;margin-bottom:.25rem">We use cookies</strong>We use cookies to improve your experience. <a href="cookie-policy.html">Learn more</a></div>
+  <div class="cookie-actions"><button id="cookie-reject" class="cookie-btn-reject">Decline</button><button id="cookie-accept" class="cookie-btn-accept">Accept All</button></div>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

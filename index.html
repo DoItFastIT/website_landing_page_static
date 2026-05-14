@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do It Fast IT | Unified Social Media Command Center</title>
+<meta name="description" content="Schedule content, reply to comments, and grow your authentic following from one clean, lightning-fast workspace.">
+<meta name="theme-color" content="#6366F1">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png?v=2">
+<link rel="shortcut icon" href="assets/img/favicon.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon.png?v=2">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>
+tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#6366F1',secondary:'#10B981',accent:'#0EA5E9',bg:'var(--bg)',text:'var(--text)','card-bg':'var(--card-bg)',border:'var(--border)'},fontFamily:{sans:['Inter','sans-serif']}}}}
+</script>
+</head>
+<body class="bg-bg text-text min-h-screen flex flex-col">
+
+<!-- NAV -->
+<nav class="fixed w-full top-0 z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <a href="index.html" class="logo-link flex items-center gap-3">
+        <div class="logo-box"><img src="assets/img/doitfastit_logo.png" alt="Do It Fast IT Logo" class="h-full w-auto object-contain"></div>
+        <span class="brand-text">Do It Fast IT</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="h-5 w-px bg-border mx-1"></div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i id="theme-icon" class="fa-solid fa-moon"></i></button>
+        <a href="contact.html" class="btn-primary">Get Started</a>
+      </div>
+      <div class="flex items-center gap-3 md:hidden">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i id="theme-icon" class="fa-solid fa-moon"></i></button>
+        <button id="mobile-menu-btn" class="p-2 text-text/60 hover:text-text"><i class="fa-solid fa-bars-staggered text-xl"></i></button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-card-bg border-b border-border p-4 absolute w-full shadow-xl">
+    <div class="flex flex-col gap-2">
+      <a href="index.html" class="px-4 py-3 rounded-xl bg-primary/10 text-primary font-semibold">Home</a>
+      <a href="about.html" class="px-4 py-3 rounded-xl hover:bg-primary/10 font-medium">About</a>
+      <a href="faq.html" class="px-4 py-3 rounded-xl hover:bg-primary/10 font-medium">FAQ</a>
+      <a href="contact.html" class="px-4 py-3 rounded-xl hover:bg-primary/10 font-medium">Contact</a>
+      <div class="h-px bg-border my-1"></div>
+      <a href="contact.html" class="btn-primary text-center mt-1">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<main class="flex-grow">
+
+<!-- HERO -->
+<section class="hero-section pt-20">
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-orb hero-orb-3"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative z-10 text-center">
+    <div class="section-label mb-8 animate-fade-in">
+      <span class="section-dot"></span>Built for Creators &amp; Agencies
+    </div>
+    <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-[1.08] tracking-tight animate-fade-in" style="animation-delay:.05s">
+      Build an Authentic<br><span class="gradient-text">Following Faster.</span>
+    </h1>
+    <p class="max-w-2xl mx-auto text-lg md:text-xl mb-10 leading-relaxed animate-fade-in" style="color:var(--text-muted);animation-delay:.12s">
+      Schedule content, reply to comments, and measure performance — all from one clean, lightning-fast workspace designed for modern social media teams.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fade-in" style="animation-delay:.2s">
+      <a href="contact.html" class="btn-primary btn-primary-lg w-full sm:w-auto">Start Growing Now <i class="fa-solid fa-arrow-right text-sm"></i></a>
+      <a href="about.html" class="btn-secondary w-full sm:w-auto">How it works <i class="fa-solid fa-play text-xs ml-1"></i></a>
+    </div>
+    <!-- Stats -->
+    <div class="grid grid-cols-3 gap-4 max-w-xl mx-auto animate-fade-in" style="animation-delay:.28s">
+      <div class="stat-card">
+        <span class="stat-number"><span data-count="500">0</span>+</span>
+        <span class="stat-label">Active Creators</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number"><span data-count="10">0</span>M+</span>
+        <span class="stat-label">Posts Scheduled</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">99.9%</span>
+        <span class="stat-label">Uptime SLA</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORMS -->
+<section class="py-14 border-y border-border" style="background:var(--bg-alt)">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <p class="text-xs font-bold uppercase tracking-widest mb-8 reveal" style="color:var(--text-faint)">Seamlessly Integrated With</p>
+    <div class="flex flex-wrap justify-center gap-10 md:gap-16 items-center opacity-50 hover:opacity-100 transition-opacity duration-500 reveal">
+      <i class="fa-brands fa-instagram text-3xl md:text-4xl hover:text-[#E4405F] transition-colors"></i>
+      <i class="fa-brands fa-tiktok text-3xl md:text-4xl hover:text-black dark:hover:text-white transition-colors"></i>
+      <i class="fa-brands fa-youtube text-3xl md:text-4xl hover:text-[#FF0000] transition-colors"></i>
+      <i class="fa-brands fa-linkedin text-3xl md:text-4xl hover:text-[#0A66C2] transition-colors"></i>
+      <i class="fa-brands fa-facebook text-3xl md:text-4xl hover:text-[#1877F2] transition-colors"></i>
+      <i class="fa-brands fa-x-twitter text-3xl md:text-4xl hover:text-black dark:hover:text-white transition-colors"></i>
+      <i class="fa-brands fa-threads text-3xl md:text-4xl transition-colors"></i>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="py-28 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <div class="section-label mb-4"><span class="section-dot"></span>Core Features</div>
+      <h2 class="text-4xl md:text-5xl font-black tracking-tight mb-4">Everything you need to <span class="gradient-text">scale fast</span></h2>
+      <p class="max-w-xl mx-auto text-base" style="color:var(--text-muted)">One powerful platform replaces five disconnected tools. Save time, reduce costs, and grow faster.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="premium-card group reveal">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 text-2xl transition-all duration-300 group-hover:scale-110" style="background:rgba(99,102,241,0.12);color:var(--primary)"><i class="fa-solid fa-link"></i></div>
+        <h3 class="text-xl font-bold mb-3">Connect</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">Link all social accounts with one-click OAuth. No technical knowledge required — live in minutes.</p>
+      </div>
+      <div class="premium-card group reveal reveal-delay-1">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 text-2xl transition-all duration-300 group-hover:scale-110" style="background:rgba(16,185,129,0.12);color:var(--secondary)"><i class="fa-solid fa-calendar-days"></i></div>
+        <h3 class="text-xl font-bold mb-3">Schedule</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">Plan and auto-publish posts to all platforms simultaneously at peak times for maximum reach.</p>
+      </div>
+      <div class="premium-card group reveal reveal-delay-2">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 text-2xl transition-all duration-300 group-hover:scale-110" style="background:rgba(14,165,233,0.12);color:var(--accent)"><i class="fa-solid fa-comments"></i></div>
+        <h3 class="text-xl font-bold mb-3">Engage</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">Manage every DM and comment from all networks in a single unified inbox. Never miss a conversation.</p>
+      </div>
+      <div class="premium-card group reveal reveal-delay-3">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 text-2xl transition-all duration-300 group-hover:scale-110" style="background:rgba(168,85,247,0.12);color:#A855F7"><i class="fa-solid fa-chart-line"></i></div>
+        <h3 class="text-xl font-bold mb-3">Analyze</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">Track growth, engagement, and reach across every network with real-time visual dashboards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="py-28 px-4" style="background:var(--bg-alt)">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <div class="section-label mb-4"><span class="section-dot"></span>How It Works</div>
+      <h2 class="text-4xl md:text-5xl font-black tracking-tight">Up and running in <span class="gradient-text">3 simple steps</span></h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="text-center reveal">
+        <div class="step-number mx-auto mb-6">1</div>
+        <h3 class="text-xl font-bold mb-3">Connect Your Accounts</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">Securely link your Instagram, Facebook, TikTok, YouTube, LinkedIn, X, and Threads accounts via OAuth.</p>
+      </div>
+      <div class="text-center reveal reveal-delay-1">
+        <div class="step-number mx-auto mb-6">2</div>
+        <h3 class="text-xl font-bold mb-3">Create &amp; Schedule Content</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">Craft posts using our editor, set the perfect publish time, and let our platform handle the rest automatically.</p>
+      </div>
+      <div class="text-center reveal reveal-delay-2">
+        <div class="step-number mx-auto mb-6">3</div>
+        <h3 class="text-xl font-bold mb-3">Track &amp; Grow</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">Monitor real-time analytics, reply to your audience, and continuously refine your strategy for faster growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-28 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <div class="section-label mb-4"><span class="section-dot"></span>What Our Clients Say</div>
+      <h2 class="text-4xl md:text-5xl font-black tracking-tight">Trusted by <span class="gradient-text">real creators</span></h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="text-sm leading-relaxed mb-5" style="color:var(--text-muted)">"Do It Fast IT completely transformed how our agency handles social media. We now manage 12 brand accounts from one dashboard — what used to take a full day is done in under two hours."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white text-sm flex-shrink-0" style="background:var(--gradient-primary)">RA</div>
+          <div><p class="font-bold text-sm">Rafiq A.</p><p class="text-xs" style="color:var(--text-muted)">Social Media Director, Dhaka</p></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-stars mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="text-sm leading-relaxed mb-5" style="color:var(--text-muted)">"The scheduling feature alone saves me 10+ hours every week. My engagement has gone up 40% since I started using consistent posting times. I genuinely can't imagine going back."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white text-sm flex-shrink-0" style="background:linear-gradient(135deg,#10B981,#0EA5E9)">NK</div>
+          <div><p class="font-bold text-sm">Nadia K.</p><p class="text-xs" style="color:var(--text-muted)">Lifestyle Content Creator</p></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-stars mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="text-sm leading-relaxed mb-5" style="color:var(--text-muted)">"The analytics reporting is incredibly detailed. I can finally prove ROI to my clients with clear data. The unified inbox has also made community management so much less stressful."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white text-sm flex-shrink-0" style="background:linear-gradient(135deg,#A855F7,#6366F1)">SM</div>
+          <div><p class="font-bold text-sm">Sabbir M.</p><p class="text-xs" style="color:var(--text-muted)">Digital Marketing Consultant</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 px-4">
+  <div class="max-w-5xl mx-auto reveal">
+    <div class="rounded-[2.5rem] p-12 md:p-20 text-center text-white relative overflow-hidden" style="background:linear-gradient(135deg,#6366F1 0%,#A855F7 50%,#0EA5E9 100%)">
+      <div class="absolute inset-0 pointer-events-none opacity-10">
+        <div class="absolute w-72 h-72 bg-white rounded-full -top-36 -left-36"></div>
+        <div class="absolute w-96 h-96 bg-white rounded-full -bottom-48 -right-48"></div>
+      </div>
+      <div class="relative z-10">
+        <h2 class="text-4xl md:text-5xl font-black mb-5 leading-tight">Ready to simplify your<br>social presence?</h2>
+        <p class="text-lg text-white/80 mb-10 max-w-xl mx-auto leading-relaxed">Join hundreds of creators and agencies who save 10+ hours every week with Do It Fast IT.</p>
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-white text-primary font-bold px-8 py-4 rounded-xl text-base hover:bg-opacity-90 transition-all hover:scale-105 hover:shadow-2xl">Get a Custom Quote <i class="fa-solid fa-arrow-right text-sm"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-border pt-20 pb-10" style="background:var(--card-bg)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div>
+        <a href="index.html" class="logo-link flex items-center gap-3 mb-5">
+          <div class="logo-box"><img src="assets/img/doitfastit_logo.png" alt="Do It Fast IT Logo" class="h-full w-auto object-contain"></div>
+          <span class="brand-text">Do It Fast IT</span>
+        </a>
+        <p class="text-sm leading-relaxed mb-6" style="color:var(--text-muted)">Building authentic followings through unified social management. Faster, cleaner, better.</p>
+        <div class="flex flex-wrap gap-2">
+          <a href="https://www.facebook.com/DoItFastIT" target="_blank" rel="noopener" class="social-link facebook w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/doitfastit" target="_blank" rel="noopener" class="social-link instagram w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/doitfastit" target="_blank" rel="noopener" class="social-link x-twitter w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+          <a href="https://www.linkedin.com/company/doitfastit" target="_blank" rel="noopener" class="social-link linkedin w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@doitfastit" target="_blank" rel="noopener" class="social-link youtube w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@doitfastit" target="_blank" rel="noopener" class="social-link tiktok w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.threads.net/@doitfastit" target="_blank" rel="noopener" class="social-link threads w-9 h-9 rounded-full border border-border flex items-center justify-center text-sm"><i class="fa-brands fa-threads"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold mb-5 text-xs uppercase tracking-widest" style="color:var(--text-faint)">Company</h4>
+        <ul class="space-y-3 text-sm font-medium">
+          <li><a href="about.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">About Us</a></li>
+          <li><a href="contact.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Contact</a></li>
+          <li><a href="faq.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-5 text-xs uppercase tracking-widest" style="color:var(--text-faint)">Legal</h4>
+        <ul class="space-y-3 text-sm font-medium">
+          <li><a href="privacy-policy.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Terms of Service</a></li>
+          <li><a href="acceptable-use.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Acceptable Use</a></li>
+          <li><a href="cookie-policy.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Cookie Policy</a></li>
+          <li><a href="refund-policy.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-5 text-xs uppercase tracking-widest" style="color:var(--text-faint)">Support</h4>
+        <ul class="space-y-3 text-sm font-medium">
+          <li><a href="security.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Security</a></li>
+          <li><a href="data-deletion.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Data Deletion</a></li>
+          <li><a href="contact.html" class="hover:text-primary transition-colors" style="color:var(--text-muted)">Help Center</a></li>
+          <li><a href="mailto:support@doitfastit.com" class="hover:text-primary transition-colors" style="color:var(--text-muted)">support@doitfastit.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-3 text-xs" style="color:var(--text-faint)">
+      <p>&copy; 2026 Do It Fast IT. All rights reserved.</p>
+      <p>Designed with <i class="fa-solid fa-heart text-red-400 mx-1"></i> by MAS Hunter Team</p>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie consent">
+  <div class="cookie-icon">🍪</div>
+  <div class="cookie-text">
+    <strong style="color:var(--text);display:block;margin-bottom:.25rem">We use cookies</strong>
+    We use cookies to enhance your browsing experience and analyse site traffic. <a href="cookie-policy.html">Cookie Policy</a>
+  </div>
+  <div class="cookie-actions">
+    <button id="cookie-reject" class="cookie-btn-reject">Decline</button>
+    <button id="cookie-accept" class="cookie-btn-accept">Accept All</button>
+  </div>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
