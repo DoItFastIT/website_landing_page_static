@@ -1,0 +1,12 @@
+# Do It Fast IT — Robots.txt
+# https://doitfastit.com
+
+User-agent: *
+Allow: /
+
+# Disallow non-content paths
+Disallow: /functions/
+Disallow: /assets/
+
+# Sitemap
+Sitemap: https://doitfastit.com/sitemap.xml
